@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rania-The Cutest</title>
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    body{
+        background-color: #d6546a;
+        text-align: center;
+    }
+    .kitty{
+        display: none;
+    }
+    button{
+        margin: auto;
+        text-align: center;
+        padding: 1rem 2rem;
+        margin-top: 10rem;
+        background: pink;
+        border-radius: 1rem;
+        font-size: 1rem;
+        font-weight: 800;
+        color: blueviolet;
+        border: 0.15rem solid pink;
+    }
+    button:active{
+        color: pink;
+        background-color: blueviolet;
+        transition: 300ms;
+    }
+    .giphy-embed{
+        display: none;
+    }
+    .anim{
+        display: block;
+        margin: auto;
+        animation: flick 600ms infinite;
+    }
+
+    @keyframes flick{
+        50%{
+            opacity: 0.2;
+        }
+        0%,100%{
+            opacity: 1;
+        }
+    }
+    .txt,
+    .he{
+        display: none;
+    }
+
+    .font{
+        display: block;
+        font-size: 1.5rem;
+        color: pink;
+    }
+</style>
+<body>
+    <button>PRESS THIS MUAAAH!</button>
+
+    <h1 class="txt">
+        YOU, MISS RANIA ABID ARE ABSOLUTELY 
+    </h1>
+
+    <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/oKk4gdT1F9j2BF88SP" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
+
+    <h2 class="he">
+        AND wowwwwwwwwwww ilyyy soooo much!!
+    </h1>
+
+    <script>
+        const btn = document.querySelector('button');
+        const gif = document.querySelector('.giphy-embed');
+        const txt = document.querySelector('.txt');
+        const he = document.querySelector('.he');
+
+        btn.addEventListener('click', () => {
+            gif.classList.add('anim');
+            txt.classList.add('font');
+            he.classList.add('font');
+        })
+    </script>
+</body>
+</html>
